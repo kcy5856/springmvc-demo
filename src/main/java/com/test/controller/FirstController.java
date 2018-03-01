@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.Map;
 
 /**
- * 〈一句话功能简述〉<br> 
  * 〈第一个controller〉
  *
  * @author kcy
@@ -45,14 +44,12 @@ public class FirstController {
     @RequestMapping(value = "/queryname", method = RequestMethod.POST)
     public String queryMyInfo(@RequestParam("uname") String name){
         System.out.println(name + "----------------");
-        System.out.println("this is my job");
         return "your name is :" + name;
     }
 
     @RequestMapping(value = "/queryage", method = RequestMethod.GET)
     public String greeting(@RequestParam("age") String age) {
         System.out.println(age + "~~~~~~~~~~~");
-        System.out.println("this is a new world");
         return "hello, " + age;
         
     }

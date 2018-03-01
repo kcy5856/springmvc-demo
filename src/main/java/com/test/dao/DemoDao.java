@@ -15,7 +15,6 @@ import org.apache.ibatis.annotations.Param;
 import java.util.Map;
 
 /**
- * 〈一句话功能简述〉<br> 
  * 〈test〉
  *
  * @author kcy
